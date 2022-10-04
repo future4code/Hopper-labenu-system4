@@ -1,4 +1,4 @@
-export class Pessoa {
+export abstract class Pessoa {
   constructor(
     private id: string,
     private nome: string,

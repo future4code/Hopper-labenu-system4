@@ -67,7 +67,7 @@ export const createEstudante = async (req: Request, res: Response) => {
           const estudante_hobby = new Estudante_hobby(
             Date.now().toString(),
             estudante.getId(),
-            id.map((e) => e.id).shift()
+            id.map((e:any) => e.id).shift()
           )
 
           await estudanteDatabase.createEstudanteHobby(estudante_hobby)

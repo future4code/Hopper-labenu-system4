@@ -16,10 +16,18 @@ export class TurmaDataBase extends BaseDataBase {
     const result = await BaseDataBase.connection(TurmaDataBase.TABLE_TURMA)
       .select()
       .where("modulo", "!=", "0");
-      return result
+    return result;
   }
 
-  public async modifiedModulo(id: string, modulo:number){
-    await BaseDataBase.connection(TurmaDataBase.TABLE_TURMA).where(id).update({modulo: modulo})
+  public async modifiedModulo(id: string, modulo: number) {
+    await BaseDataBase.connection(TurmaDataBase.TABLE_TURMA)
+      .update("modulo", modulo)
+      .where("id", "=", id);
+  }
+
+  public async getTurmaById(id:string) {
+    const result = await BaseDataBase.connection(TurmaDataBase.TABLE_TURMA)
+      .where("id", "=", id);
+    return result;
   }
 }

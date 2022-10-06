@@ -71,3 +71,12 @@ Content-Type: application/json
     "turma_id":"Sayajin",
     
 }
+
+### Modificar Docente
+
+PUT http://localhost:3003/docente
+Content-Type: application/json
+{
+    "nome":"Vivi",
+    "novaTurma":"turma1"
+}

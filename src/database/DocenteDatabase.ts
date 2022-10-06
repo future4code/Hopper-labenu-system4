@@ -23,10 +23,18 @@ export class DocenteDatabase extends BaseDataBase {
     }
 
     public async findDocente(id:string) {
-        const result = await (await BaseDataBase.connection(DocenteDatabase.TABLE_DOCENTE)
+        const result = await BaseDataBase.connection(DocenteDatabase.TABLE_DOCENTE)
         .select()
         .where({id})
-        )
+        
+        return result
+     }
+
+     public async changeDocente(id:string){
+        const result = await BaseDataBase.connection(DocenteDatabase.TABLE_DOCENTE)
+        .select()
+        .update({id})
+
         return result
      }
 

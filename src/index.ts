@@ -13,6 +13,7 @@ import { modifiedEstudante } from './endpoints/modifiedEstudante';
 import app from "./app";
 import { getDocente } from './endpoints/getDocente';
 import { createDocente} from './endpoints/createDocente'
+import { modifiedDocente } from './endpoints/modifiedDocente';
 
 // LUCIA
 app.post("/turma", createTurma)
@@ -29,3 +30,4 @@ app.put("/estudante", modifiedEstudante)
 //ERICA 
 app.get("/docente",getDocente)
 app.post("/docente",createDocente)
+app.put("/dpcente",modifiedDocente)

@@ -53,3 +53,21 @@ Content-Type: application/json
 {
     "modulo": 5
 }
+
+//ERICA
+
+### Buscar docente
+
+GET http://localhost:3003/docente
+
+### Criar Docente
+
+POST http://localhost:3003/docente
+Content-Type: application/json
+{
+    "nome":"Goku",
+    "email":"gokukame@gmail.com",
+    "data_nasc":"10/05/1980",
+    "turma_id":"Sayajin",
+    
+}

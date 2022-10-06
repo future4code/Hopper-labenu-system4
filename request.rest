@@ -51,7 +51,6 @@ PUT http://localhost:3003/turma/1664915763300
 Content-Type: application/json
 
 {
-    "modulo": 5
 }
 
 //ERICA

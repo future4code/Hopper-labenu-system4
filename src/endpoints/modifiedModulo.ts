@@ -1,4 +1,3 @@
-import { Turma } from './../models/Turma';
 import { TurmaDataBase } from "../database/TurmaDataBase";
 import { Request, Response } from "express";
 
@@ -15,7 +14,7 @@ export const modifiedModulo = async (req: Request, res: Response) => {
 
     if (modulo < 0 || modulo > 6) {
       errorCode = 422;
-      throw new Error("Os modulos sao do 0 ao 6.");
+      throw new Error("Os valores do modulo sao do 0 ao 6.");
     }
 
     const turmaDataBase = new TurmaDataBase();

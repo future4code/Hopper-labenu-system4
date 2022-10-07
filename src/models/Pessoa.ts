@@ -7,7 +7,7 @@ export abstract class Pessoa {
     private turma_id: string
   ) {}
 
-  public getId(): string{
+public getId(): string{
     return this.id
 }
 

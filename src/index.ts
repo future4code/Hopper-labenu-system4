@@ -9,8 +9,10 @@ import { createEstudante } from './endpoints/createEstudante';
 import { getEstudante } from './endpoints/getEstudante';
 import { modifiedEstudante } from './endpoints/modifiedEstudante';
 
-
+//ERICA
 import app from "./app";
+import { getDocente } from './endpoints/getDocente';
+import { createDocente} from './endpoints/createDocente'
 
 // LUCIA
 app.post("/turma", createTurma)
@@ -23,3 +25,7 @@ app.get("/ping", ping)
 app.get("/estudante", getEstudante)
 app.post("/estudante", createEstudante)
 app.put("/estudante", modifiedEstudante)
+
+//ERICA 
+app.get("/docente",getDocente)
+app.post("/docente",createDocente)

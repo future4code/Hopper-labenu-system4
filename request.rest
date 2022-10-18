@@ -1,0 +1,72 @@
+// MARIO
+### TESTE DE API
+GET http://localhost:3003/ping
+
+### CRIAR ESTUDANTE
+POST http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "nome": "Robson",
+    "email": "robson@labenu.com",
+    "data_nasc": "18/10/2010",
+    "turma_id": "2",
+    "hobbies": "ouvir musica,andar de carro,dirigir"
+}
+
+
+### BUSCAR ESTUDANTE PELO NOME
+GET http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "nome":"robson"
+}
+
+
+### MUDAR A TURMA DO ESTUDANTE
+PUT http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "nome":"robson",
+    "novaTurma":"5"
+}
+
+
+// LUCIA
+### Criar Turma
+POST http://localhost:3003/turma
+Content-Type: application/json
+{
+"nome": "Pocahontas"
+}
+
+### Buscar turmas ativas
+GET http://localhost:3003/turma
+
+
+### Mudar turma de módulo
+PUT http://localhost:3003/turma/1664915763300
+Content-Type: application/json
+
+{
+}
+
+//ERICA
+
+### Buscar docente
+
+GET http://localhost:3003/docente
+
+### Criar Docente
+
+POST http://localhost:3003/docente
+Content-Type: application/json
+{
+    "nome":"Goku",
+    "email":"gokukame@gmail.com",
+    "data_nasc":"10/05/1980",
+    "turma_id":"Sayajin",
+    
+}
